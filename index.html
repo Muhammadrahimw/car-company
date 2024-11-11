@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Today's Statistics</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+		<link rel="stylesheet" href="./src/output.css" />
+	</head>
+	<body class="">
+		<main
+			class="flex items-start justify-between min-h-screen gap-4 bg-gray-100">
+			<section
+				class="flex flex-col justify-between w-[20em] h-[48em] p-6 text-gray-300 bg-gray-900">
+				<div class="space-y-8">
+					<div class="flex items-center space-x-2">
+						<div>
+							<img src="./elements/Logo.svg" alt="Logo" />
+						</div>
+					</div>
+					<nav class="space-y-4">
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 text-white bg-blue-500 rounded-md">
+							<i class="fa-solid fa-table-cells-large"></i>
+							<span>Dashboard</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-solid fa-car"></i>
+							<span>Drivers</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-regular fa-bookmark"></i>
+							<span>Bookings</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-solid fa-bell"></i>
+							<span>Notifications</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-solid fa-gear"></i>
+							<span>Settings</span>
+						</a>
+						<hr class="my-4 border-gray-700" />
+						<div class="pl-4 text-xs tracking-wide text-gray-500 uppercase">
+							Report
+						</div>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-solid fa-credit-card"></i>
+							<span>Payment Details</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-solid fa-money-bill-transfer"></i>
+							<span>Transactions</span>
+						</a>
+						<a
+							href="#"
+							class="flex items-center px-4 py-2 space-x-3 rounded-md hover:text-white hover:bg-gray-700">
+							<i class="fa-regular fa-file-lines"></i>
+							<span>Car Report</span>
+						</a>
+					</nav>
+				</div>
+				<a
+					href="#"
+					class="flex items-center justify-center px-4 py-2 space-x-3 text-white bg-gray-800 rounded-md hover:bg-gray-700">
+					<i class="fa-solid fa-right-from-bracket"></i>
+					<span>Logout</span>
+				</a>
+			</section>
+			<section class="w-[450px] pt-4">
+				<div class="mb-4 text-left text-gray-600">
+					<h2 class="text-xl font-semibold text-gray-700">
+						Today's Statistics
+					</h2>
+					<p class="text-sm text-gray-400">Tue, 12 Nov, 2024, 08.30 AM</p>
+				</div>
+				<div class="p-4 mb-4 bg-white rounded-lg shadow">
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="font-medium text-gray-500">Income</h3>
+						<span class="px-2 py-1 text-sm text-gray-500 bg-gray-100 rounded"
+							>Today</span
+						>
+					</div>
+					<div
+						id="driversNumber"
+						class="flex justify-between mb-1 text-3xl font-bold text-black">
+						5 person
+						<span class="text-base font-bold text-red-500"
+							><i class="fa-solid fa-arrow-down"></i> 15%</span
+						>
+					</div>
+					<p class="text-sm text-gray-400">Compared to $9940 yesterday</p>
+					<p class="text-sm text-gray-400">
+						Last week Income
+						<span class="font-semibold text-gray-600">$25658.00</span>
+					</p>
+				</div>
+				<div class="p-4 mb-4 bg-white rounded-lg shadow">
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="font-medium text-gray-500">Expenses</h3>
+						<span class="px-2 py-1 text-sm text-gray-500 bg-gray-100 rounded"
+							>Today</span
+						>
+					</div>
+					<div class="flex justify-between mb-1">
+						<p id="allPrice" class="text-3xl font-bold text-black">$ 5660.00</p>
+						<span class="text-base font-bold text-green-500"
+							><i class="fa-solid fa-arrow-up"></i> 2.5%</span
+						>
+					</div>
+					<p class="text-sm text-gray-400">Compared to $5240 yesterday</p>
+					<p class="text-sm text-gray-400">
+						Last week expenses
+						<span class="font-semibold text-gray-600">$22658.00</span>
+					</p>
+				</div>
+				<div class="p-4 bg-white rounded-lg shadow">
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="font-medium text-gray-500">Hire vs Cancel</h3>
+						<span class="px-2 py-1 text-sm text-gray-500 bg-gray-100 rounded"
+							>Today</span
+						>
+					</div>
+					<div class="flex items-center justify-center my-4">
+						<img src="./elements/1.png" alt="" class="w-[9em]" />
+					</div>
+					<div class="space-y-2">
+						<div class="flex items-center text-sm text-gray-600">
+							<span
+								class="w-2.5 h-2.5 bg-blue-500 rounded-full inline-block mr-2"></span>
+							Total Hired 54% <span class="ml-1 text-green-500">↑</span>
+						</div>
+						<div class="flex items-center text-sm text-gray-600">
+							<span
+								class="w-2.5 h-2.5 bg-green-500 rounded-full inline-block mr-2"></span>
+							Total Canceled 20%
+						</div>
+						<div class="flex items-center text-sm text-gray-600">
+							<span
+								class="w-2.5 h-2.5 bg-red-500 rounded-full inline-block mr-2"></span>
+							Total Pending 26% <span class="ml-1 text-red-500">↓</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-8 pr-8 space-y-6 w-[700px]">
+				<div class="flex flex-col items-center sm:flex-row sm:gap-4">
+					<i class="mb-2 fa-solid fa-bell fa-lg sm:mb-0"></i>
+					<div
+						class="w-full sm:w-[240px] flex items-center justify-start bg-white px-2 py-1 rounded-md">
+						<input
+							class="w-full h-5 bg-transparent outline-none"
+							placeholder="Search here"
+							type="text" />
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</div>
+				<div class="p-4 space-y-4 bg-white rounded-lg shadow-md">
+					<h2 class="text-lg font-semibold">Car Availability</h2>
+					<div
+						class="flex flex-col space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0">
+						<div
+							class="flex items-center px-3 py-2 space-x-2 border rounded-lg">
+							<i class="fa-solid fa-car fa-lg"></i>
+							<select class="text-gray-700 outline-none">
+								<option>Car number</option>
+							</select>
+						</div>
+						<div
+							class="flex items-center px-3 py-2 space-x-2 border rounded-lg">
+							<i class="fa-solid fa-calendar-days fa-lg"></i>
+							<input type="date" class="text-gray-700 outline-none" />
+						</div>
+						<div
+							class="flex items-center px-3 py-2 space-x-2 border rounded-lg">
+							<i class="fa-regular fa-clock fa-lg"></i>
+							<input type="time" class="text-gray-700 outline-none" />
+						</div>
+						<button
+							class="w-full px-4 py-2 text-white bg-blue-500 rounded-lg sm:w-auto">
+							Check
+						</button>
+					</div>
+				</div>
+				<div class="p-4 space-y-3 bg-white rounded-lg shadow-md">
+					<div class="flex items-center justify-between">
+						<h2 class="text-lg font-semibold">Live Car Status</h2>
+						<button class="text-gray-500">Filter</button>
+					</div>
+					<table class="w-full text-sm text-left">
+						<thead>
+							<tr class="text-gray-500">
+								<th class="py-2">No.</th>
+								<th>Car no.</th>
+								<th>Driver</th>
+								<th>Status</th>
+								<th>Earning</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="driversUi"></tbody>
+					</table>
+				</div>
+				<div class="p-4 space-y-4 bg-white rounded-lg shadow-md">
+					<div
+						class="flex flex-col items-start space-y-3 sm:flex-row sm:justify-between sm:items-center sm:space-y-0">
+						<h2 class="text-lg font-semibold">Earning Summary</h2>
+						<select class="w-full text-gray-700 outline-none sm:w-auto">
+							<option>Mar 2022 - Oct 2022</option>
+						</select>
+						<div
+							class="flex justify-end w-full space-x-4 text-sm text-gray-500 sm:w-auto">
+							<div class="flex items-center space-x-1">
+								<span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+								<span>Last 6 months</span>
+							</div>
+							<div class="flex items-center space-x-1">
+								<span class="w-2 h-2 bg-gray-400 rounded-full"></span>
+								<span>Same period last year</span>
+							</div>
+						</div>
+					</div>
+					<div class="relative rounded-lg h-36">
+						<div class="absolute inset-0 flex items-center justify-center">
+							<img class="w-full" src="./elements/5.png" alt="Chart" />
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="./dist/bundle.js"></script>
+	</body>
+</html>
